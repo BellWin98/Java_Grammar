@@ -20,6 +20,7 @@ public class C06String {
         // String과 int의 형변환
 //        int a = 10;
 //        String str_a = Integer.toString(a); // "10"
+//        String str_b = String.valueOf(a);
 //        int c = Integer.parseInt(str_a); // 10
 
         // 참조 자료형에 원시 자료형을 담을 땐 Wrapper 클래스를 써야함
@@ -80,6 +81,11 @@ public class C06String {
 //        System.out.println(str.toUpperCase());
 
         // 문자열 더하기
+        // +=은 성능이 떨어진다.
+        // 이유: 갖다 붙인 게 아니라 새롭게 데이터를 선언(재선언)한 것이기 때문에 느림
+        // StringBuffer나 StringBuilder 사용하면 좋음
+        // 성능 관계: String < StringBuffer < StringBuilder
+
 //        String a = "hello";
 //        a += " world";
 //        System.out.println(a);
@@ -140,17 +146,39 @@ public class C06String {
 //        System.out.println(Arrays.toString(str2Arr));
 
         // isEmpty와 null 구분
-        String str1 = null;
-        String str2 = "";
+//        String str1 = null;
+//        String str2 = "";
+//
+//        System.out.println(str1 == null);
+//        System.out.println(str2 == null);
+//        System.out.println(str2.isEmpty());
+//        System.out.println(str1.isEmpty()); // NPE (NullPointerException) 예외 발생
+//
+//        String[] arr = new String[5];
+//        arr[0] = "hello";
+//        arr[1] = "world";
 
-        System.out.println(str1 == null);
-        System.out.println(str2 == null);
-        System.out.println(str2.isEmpty());
-        System.out.println(str1.isEmpty()); // NPE (NullPointerException) 예외 발생
+        // join: String[] -> String
+        // 합치는 기준이 있어야 함.
+//        String[] strArr = {"C", "C++", "Java", "Python", "Html"};
+//        String str = String.join(" ", strArr);
+//        System.out.println(str);
 
-        String[] arr = new String[5];
-        arr[0] = "hello";
-        arr[1] = "world";
+        // StringBuffer
+//        StringBuffer sb = new StringBuffer("hello");
+//        sb.append(" world");
+//        sb.insert(6, "java ");
+//        System.out.println(sb);
+//        System.out.println(sb.substring(6, 10));
+//        System.out.println(sb.delete(1, 3));
+//        System.out.println(sb);
+//        System.out.println(sb);
 
+        // 성능: String < StringBuffer < StringBuilder (Thread-Safe X)
+//        StringBuilder sb2 = new StringBuilder("hello");
+//        sb2.append(" world");
+//        System.out.println(sb2);
+
+//        System.out.println(('a'+"") + 3);
     }
 }
