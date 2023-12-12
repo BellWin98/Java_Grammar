@@ -259,9 +259,9 @@ public class C07Array {
 //        arr2[0] = new int[1];
 //        arr2[1] = new int[2];
 //        arr2[2] = new int[3];
-////        arr2[0][0] = 10; // NPE 오류 남
-////        arr2[1][0] = 20;
-////        arr2[2][0] = 30;
+//        arr2[0][0] = 10; // NPE 오류 남
+//        arr2[1][0] = 20;
+//        arr2[2][0] = 30;
 //        System.out.println(Arrays.deepToString(arr2));
 //
 //        // 가변 배열 리터럴 방식
@@ -280,7 +280,7 @@ public class C07Array {
 //        System.out.println(Arrays.deepToString(arr));
 
         // 가변 배열 만들기: 전체 사이즈 - 5
-        // 각 배열마다 사이즈 1,2,3,4,5로 커지도록:  for문
+        // 각 배열마다 사이즈 1,2,3,4,5로 커지도록: for문
         // 각 사이즈 별로 1은 10이 모두 들어가고, 2는 20이 모두 들어가고 3은 30 ...
         // 내 풀이
         int[][] arr = new int[5][];
