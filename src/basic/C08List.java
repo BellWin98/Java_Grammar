@@ -1,3 +1,5 @@
+package basic;
+
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -27,7 +29,7 @@ public class C08List {
 //        List<Integer> myList = new ArrayList<>();
 //        myList.add(10);
 //        myList.add(20);
-//        myList.add(1, 15);
+//        myList.add(1, 15); // 중간에 값 삽입은 기본적으로 성능 저하
 //        System.out.println(myList);
 //
 //        List<Integer> myList2 = new ArrayList<>();
@@ -48,7 +50,8 @@ public class C08List {
 //        // remove는 value 및 index를 통한 삭제가 가능
 //        // remove를 통한 index 삭제: 0번째
 //        Integer value = myList.remove(0);
-//        // 객체를 통한 삭제: Integer.valueOf()
+
+//        // 객체를 통한 삭제: Integer.valueOf() // 값 중복 시 먼저 나오는 값 삭제
 //        myList.remove(Integer.valueOf(15));
 //        System.out.println(value);
 //        System.out.println(myList);
@@ -69,7 +72,7 @@ public class C08List {
 //
 //        // indexOf(): 몇번째 index에 위치하는 지 return, 요소가 없으면 -1 return
 //        // 동일 숫자가 있으면 첫번째 index값 return
-//        System.out.println(myList.indexOf(20));
+//        System.out.println(myList.indexOf(20)); // value 값이 들어옴
 //
 //        // isEmpty(): 값 존재 여부 확인
 //        System.out.println(myList.isEmpty());
@@ -107,8 +110,10 @@ public class C08List {
 //        }
 //        System.out.println(myList1);
 
-//        List<int[]> myList = new ArrayList<>();
-//        myList.add(new int[3]);
+//        List<int[]> myList = new ArrayList<>(); // 변수명 생략
+//        List<List<Integer>> myList1 = new ArrayList<>();
+//        myList1.add(new ArrayList<>(Arrays.asList(1,2,3)));
+//        myList.add(new int[]{1,2,3});
 //        myList.add(new int[3]);
 //        myList.add(new int[3]);
 //

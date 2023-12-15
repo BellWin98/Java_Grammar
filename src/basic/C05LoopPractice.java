@@ -1,3 +1,5 @@
+package basic;
+
 public class C05LoopPractice {
     public static void main(String[] args) {
         // 1~20까지 짝수의 합 계산 하기

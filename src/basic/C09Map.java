@@ -1,3 +1,5 @@
+package basic;
+
 import java.util.*;
 
 public class C09Map {
@@ -15,7 +17,7 @@ public class C09Map {
 //        myMap.put("basketball", "탁구");
 //
 //        // 없으면 put이 putIfAbsent
-//        myMap.putIfAbsent("baseball", "배구");
+//        myMap.putIfAbsent("baseball", "배구"); // 기존 값이 없는 경우에만 put, 있으면 값 안바뀜
 //
 //        // key가 없으면 default값 return
 //        System.out.println(myMap.getOrDefault("tennis", "스포츠"));
@@ -36,6 +38,7 @@ public class C09Map {
 //        myMap.put("baseball", "야구");
 //        // iterator를 통해 key값 하나씩 출력
 //        Iterator<String> myIter = myMap.keySet().iterator();
+
 //        // next() 메서드는 데이터를 소모시키면서 return
 ////        System.out.println(myIter.next());
 ////        System.out.println(myIter);
@@ -45,29 +48,47 @@ public class C09Map {
 //            System.out.println(myIter.next());
 //        }
 
-        List<String> myList = new ArrayList<>();
-        myList.add("basketball");
-        myList.add("basketball");
-        myList.add("basketball");
-        myList.add("baseball");
-        myList.add("baseball");
-        myList.add("tennis");
-        myList.add("tennis");
-        myList.add("tennis");
+//        List<String> myList = new ArrayList<>();
+//        myList.add("basketball");
+//        myList.add("basketball");
+//        myList.add("basketball");
+//        myList.add("baseball");
+//        myList.add("baseball");
+//        myList.add("tennis");
+//        myList.add("tennis");
+//        myList.add("tennis");
+//
+//        Map<String, Integer> studentsMap = new HashMap<>();
+//        for (String s : myList) {
+//            // 방법 1
+////            if (!studentsMap.containsKey(s)) {
+////                studentsMap.put(s, 1);
+////            } else {
+////                studentsMap.put(s, studentsMap.get(s) + 1);
+////            }
+//             studentsMap.put(s, studentsMap.getOrDefault(s, 0) + 1); // 방법 2
+//        }
+//
+//        for (String info : studentsMap.keySet()){
+//            System.out.println(info + "을 " + studentsMap.get(info) + "명이 좋아합니다.");
+//        }
 
-        Map<String, Integer> studentsMap = new HashMap<>();
-        for (String s : myList) {
-            // 방법 1
-            if (!studentsMap.containsKey(s)) {
-                studentsMap.put(s, 1);
-            } else {
-                studentsMap.put(s, studentsMap.get(s) + 1);
-            }
-            // studentsMap.put(s, studentsMap.getOrDefault(s, 0) + 1); // 방법 2
-        }
+        // LinkedHashMap: 데이터 삽입 순서 유지
+        Map<String, Integer> myMap = new LinkedHashMap<>();
+        myMap.put("hello5", 1);
+        myMap.put("hello4", 1);
+        myMap.put("hello3", 1);
+        myMap.put("hello2", 1);
+        myMap.put("hello1", 1);
+        System.out.println(myMap);
 
-        for (String info : studentsMap.keySet()){
-            System.out.println(info + "을 " + studentsMap.get(info) + "명이 좋아합니다.");
-        }
+        // TreeMap: key를 통해 데이터 정렬
+        Map<String, Integer> myMap2 = new TreeMap<>();
+        myMap2.put("hello5", 1);
+        myMap2.put("hello4", 1);
+        myMap2.put("hello3", 1);
+        myMap2.put("hello2", 1);
+        myMap2.put("hello1", 1);
+        System.out.println(myMap2);
     }
 }
