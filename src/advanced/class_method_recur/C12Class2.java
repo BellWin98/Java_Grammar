@@ -1,4 +1,4 @@
-package structure;
+package advanced.class_method_recur;
 
 import java.util.Scanner;
 

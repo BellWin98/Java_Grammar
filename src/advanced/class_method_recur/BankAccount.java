@@ -1,4 +1,4 @@
-package structure;
+package advanced.class_method_recur;
 class BankAccount {
     private String accountNumber; // 계좌번호
     private int balance = 0; // 잔고

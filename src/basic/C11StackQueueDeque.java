@@ -1,9 +1,6 @@
 package basic;
 
-import structure.C12Method;
-
 import java.util.*;
-import java.util.concurrent.ArrayBlockingQueue;
 
 public class C11StackQueueDeque {
     public static void main(String[] args) {

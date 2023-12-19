@@ -1,4 +1,4 @@
-package structure;
+package advanced.class_method_recur;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,7 +18,6 @@ public class AuthorPostService {
 
     static List<Author> authors = new ArrayList<>();
     static List<Post> posts = new ArrayList<>();
-
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

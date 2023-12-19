@@ -1,4 +1,4 @@
-package structure;
+package advanced.class_method_recur;
 
 public class C12Contructor {
     public static void main(String[] args) {
