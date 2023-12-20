@@ -3,6 +3,7 @@ package advanced.class_method_recur;
 // 프로그래머스 - 피로도
 public class Pirodo {
     static int max = 0;
+    static boolean checked = false;
     public static void main(String[] args) {
         int[][] dungeons = {{80, 20}, {50, 40}, {30, 10}};
         boolean[] visited = new boolean[dungeons.length];
@@ -16,11 +17,19 @@ public class Pirodo {
             max = count;
         }
 
+        if (max == dungeons.length){
+            checked = true;
+            return;
+        }
+
         for (int i = 0; i < dungeons.length; i++){
             if (!visited[i] && k >= dungeons[i][0]){
                 visited[i] = true;
                 permutation(visited, dungeons, k - dungeons[i][1], count + 1);
                 visited[i] = false;
+            }
+            if (checked){
+                break;
             }
         }
     }

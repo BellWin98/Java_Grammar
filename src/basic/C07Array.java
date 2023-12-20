@@ -1,7 +1,5 @@
 package basic;
 
-import javax.naming.PartialResultException;
-import java.sql.SQLOutput;
 import java.util.*;
 
 public class C07Array {
