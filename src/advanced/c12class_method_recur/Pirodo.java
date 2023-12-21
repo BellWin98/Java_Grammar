@@ -1,4 +1,4 @@
-package advanced.class_method_recur;
+package advanced.c12class_method_recur;
 
 // 프로그래머스 - 피로도
 public class Pirodo {

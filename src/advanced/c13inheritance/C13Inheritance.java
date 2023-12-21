@@ -1,4 +1,4 @@
-package advanced.inheritance;
+package advanced.c13inheritance;
 
 public class C13Inheritance extends Parents{
 

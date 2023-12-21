@@ -1,6 +1,6 @@
-package advanced.inheritance_test;
+package advanced.c13inheritance_test;
 
-import advanced.inheritance.C13ProtectedClass;
+import advanced.c13inheritance.C13ProtectedClass;
 
 public class ProtectedMain extends C13ProtectedClass{
     public static void main(String[] args) {

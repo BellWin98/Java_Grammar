@@ -1,4 +1,4 @@
-package advanced.inheritance;
+package advanced.c13inheritance;
 
 // public : 프로젝트 전체에서 접근 가능
 // protected : 패키지를 벗어나도 상속 관계인 경우엔 접근 가능

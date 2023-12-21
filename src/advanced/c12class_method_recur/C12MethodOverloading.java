@@ -1,4 +1,4 @@
-package advanced.class_method_recur;
+package advanced.c12class_method_recur;
 
 import java.util.ArrayList;
 import java.util.List;

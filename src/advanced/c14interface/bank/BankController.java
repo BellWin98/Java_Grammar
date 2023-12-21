@@ -1,6 +1,8 @@
 package advanced.c14interface.bank;
 
 import java.util.Scanner;
+
+// 사용자 요청 처리 (EntryPoint)
 public class BankController {
     private static BankService bankService;
     private static final Scanner sc = new Scanner(System.in);

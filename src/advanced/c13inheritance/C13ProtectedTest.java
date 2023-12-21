@@ -1,4 +1,4 @@
-package advanced.inheritance;
+package advanced.c13inheritance;
 
 public class C13ProtectedTest {
     public static void main(String[] args) {

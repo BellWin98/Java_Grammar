@@ -1,6 +1,4 @@
-package advanced.inheritance;
-
-import java.util.List;
+package advanced.c13inheritance;
 
 public class C13MethodOverriding {
     public static void main(String[] args) {

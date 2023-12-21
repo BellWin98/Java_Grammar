@@ -123,7 +123,5 @@ public class C11StackQueueDeque {
 
         // 프로그래머스 - 올바른 괄호 (풀어보기)
         // for, stack, deque로 풀어보기
-
-
     }
 }

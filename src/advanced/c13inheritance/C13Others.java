@@ -1,4 +1,4 @@
-package advanced.inheritance;
+package advanced.c13inheritance;
 
 // import java.util.* : util 하위의 모든 클래스 / 인터페이스 파일 import 가능
 // import java.* : 불가능, 특정 패키지의 하위패키지의 모든 파일까지 import 하는 것은 불가능
