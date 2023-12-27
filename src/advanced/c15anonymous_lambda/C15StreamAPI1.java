@@ -58,6 +58,7 @@ public class C15StreamAPI1 {
 //        // 생성자도 메서드의 일종이므로, new도 메서드 자리에 올 수 있음
 //        String[] newStrArr = strStream.filter(a -> a.length() <= 4).toArray(String[]::new);
 //        System.out.println(Arrays.toString(newStrArr));
+
 //
 //        // stream 중개 연산: filter, map, sorted, distinct
 //
