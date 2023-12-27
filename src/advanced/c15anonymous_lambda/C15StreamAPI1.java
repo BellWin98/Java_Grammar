@@ -141,7 +141,7 @@ public class C15StreamAPI1 {
 //        OptionalDouble average = numList.stream().mapToInt(a -> a).average();
 //        long count = numList.stream().filter(a -> a >= 3).count();
 //
-//        System.out.println("min: " + min.getAsInt() + ", max: " + max.getAsInt() + ", average: " + average.getAsDouble() + ", sum: " + sum + ", count: " + count);
+//        System.out.println("min: " + min.getAsInt() + ", max: " + max.getAsInt() + ", average: " + average.getAsDouble() + ", sum: " + sum + ", count: " + count)
 
         // findFirst()
 //        List<Student> students = new ArrayList<>();
@@ -168,10 +168,10 @@ public class C15StreamAPI1 {
 //        System.out.println("30세 이하인 사람 중 선착순 1위는: " + students.stream().filter(a -> a.getAge() <= 30).findFirst().get());
 
         // 기존의 java의 null
-        String st = null;
-        if (st != null){
-            System.out.println(st.compareTo("abc"));
-        }
+//        String st = null;
+//        if (st != null){
+//            System.out.println(st.compareTo("abc"));
+//        }
 
         // java8 이후에 나온 Optional 객체를 통해 특정 객체에 값이 없을 지도 모른다는 것을 명시적으로 표현
         // Optional 객체에 빈 값을 명시적으로 넣는 방법: Optional.empty();
