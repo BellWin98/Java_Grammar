@@ -41,18 +41,15 @@ public class AuthorController {
                     String userEmail = sc.next();
                     System.out.print("비밀번호를 입력하세요: ");
                     String userPassword = sc.next();
-                    Optional<Author> loginedAuthor = Optional.empty();
                     try {
-                        loginedAuthor = authorService.login(userEmail, userPassword);
+                        Author loginedAuthor = authorService.login(userEmail, userPassword);
+                        System.out.println(loginedAuthor.getNickname() + "님 환영합니다.");
                     } catch (IllegalArgumentException | NoSuchElementException e){
                         System.out.println("로그인에 실패하였습니다.");
                         System.out.println("오류 내용: " + e.getMessage());
                     } catch (Exception e){
                         System.out.println("로그인에 실패하였습니다.");
                         System.out.println("알 수 없는 오류입니다.");
-                    }
-                    if (loginedAuthor.isPresent()){
-                        System.out.println(loginedAuthor.get().getNickname() + "님 환영합니다.");
                     }
                     break;
             }

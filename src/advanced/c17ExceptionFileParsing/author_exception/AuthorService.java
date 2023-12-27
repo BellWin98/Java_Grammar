@@ -31,7 +31,9 @@ public class AuthorService {
         System.out.println("가입된 회원 이메일: " + author.getEmail());
     }
 
-    public Optional<Author> login(String email, String password) throws IllegalArgumentException, NoSuchElementException{
+    // 예상되는 예외를 명시적으로 표기해주는 것이 좋음.
+    // 물론, 안써도 자동으로 Controller 단으로 throw 됨
+    public Author login(String email, String password) throws IllegalArgumentException, NoSuchElementException{
         // email이 존재하지 않으면 예외 발생 (NoSuchElementException)
         Optional<Author> findAuthor = authorRepository.findByEmail(email);
         if (findAuthor.isEmpty()){
@@ -42,6 +44,6 @@ public class AuthorService {
             throw new IllegalArgumentException("비밀번호가 일치하지 않습니다.");
         }
         System.out.println("성공적으로 로그인 되었습니다.");
-        return findAuthor;
+        return findAuthor.get();
     }
 }
