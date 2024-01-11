@@ -142,7 +142,7 @@ public class C15StreamAPI1 {
 //        OptionalDouble average = numList.stream().mapToInt(a -> a).average();
 //        long count = numList.stream().filter(a -> a >= 3).count();
 //
-//        System.out.println("min: " + min.getAsInt() + ", max: " + max.getAsInt() + ", average: " + average.getAsDouble() + ", sum: " + sum + ", count: " + count);
+//        System.out.println("min: " + min.getAsInt() + ", max: " + max.getAsInt() + ", average: " + average.getAsDouble() + ", sum: " + sum + ", count: " + count)
 
         // findFirst()
 //        List<Student> students = new ArrayList<>();
